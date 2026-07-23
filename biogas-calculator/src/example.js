@@ -201,9 +201,9 @@ export default function FilterSizingCalculator() {
         }
 
         .page {
-            min-height: 100vh;
+            min-height: 50vh;
             background:
-              linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+              linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.25)),
               url("/bg-gas-filter.png") no-repeat center center / cover;
             display: flex;
             align-items: center;

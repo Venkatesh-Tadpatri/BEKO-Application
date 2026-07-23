@@ -62,7 +62,7 @@
     "drain": "M"
   },
   "filterScopes": ["Simplex", "Duplex"],
-  "endConnections": ["3/8\"", "1/4\"", "1/2\"", "3/4\"", "1\"", "1 1/2\"", "2\""],
-  "mocOptions": ["SS304", "SS316", "Carbon Steel"],
+  "endConnections": ["3/8\"", "1/4\"", "1/2\"", "3/4\"", "1\"", "1 1/2\"", "2\"", "DN50", "DN80", "DN100", "DN150", "DN200", "DN250", "DN300"],
+  "mocOptions": ["SS304", "SS316", "EN8", "Carbon Steel"],
   "fittingsOptions": ["Hylok", "Swagelok", "Parker"]
 }

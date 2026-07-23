@@ -1,6 +1,6 @@
 {
   "name": "biogas-calculator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Beko Filter Selection Tool - Standalone Desktop Application",
   "author": "Mepstra",
   "main": "electron.js",
@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.31",
     "lucide-react": "^0.263.1",
@@ -36,6 +37,7 @@
     "files": [
       "build/**/*",
       "electron.js",
+      "preload.js",
       "node_modules/**/*"
     ],
     "win": {
@@ -43,6 +45,7 @@
       "icon": "public/icon.ico"
     },
     "nsis": {
+      "include": "installer.nsh",
       "oneClick": false,
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
@@ -54,8 +57,7 @@
       "uninstallerIcon": "assets/icon.ico",
       "installerHeaderIcon": "assets/icon.ico"
     }
-},
-
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
     "concurrently": "^7.6.0",
